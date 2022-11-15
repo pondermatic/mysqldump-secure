@@ -2184,7 +2184,8 @@ validate_cnf_file() {
 			[ "${_directive}" != "host" ] &&
 			[ "${_directive}" != "port" ] &&
 			[ "${_directive}" != "user" ] &&
-			[ "${_directive}" != "password" ]; then
+			[ "${_directive}" != "password" ] &&
+			[ "${_directive}" != "protocol" ]; then
 			echo "Invalid directive found: \"${_directive}\""
 			return 1
 		fi
